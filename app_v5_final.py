@@ -81,7 +81,7 @@ ax.set_ylabel(variable)
 
 # Put matplotlib figure in col 1 
 row2_col1.subheader("Compare Customer Groups")
-row2_col1.pyplot(fig1, use_container_width=True)
+row2_col1.pyplot(fig1)
 
 # Create a seaborn figure 
 fig2 = sns.lmplot(y="borrower_rate", x = variable, data = filtered_data, order=2,
@@ -90,7 +90,7 @@ fig2 = sns.lmplot(y="borrower_rate", x = variable, data = filtered_data, order=2
 
 # Put seaborn figure in col 2 
 row2_col2.subheader("Borrower Rate Correlations")
-row2_col2.pyplot(fig2, use_container_width=True)
+row2_col2.pyplot(fig2)
 
 #### Definition of Section 2 for making predictions
 #########################################################
